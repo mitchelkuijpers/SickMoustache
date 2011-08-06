@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 public class ApplicationController {
 
-    protected final Log logger = LogFactory.getLog(getClass());
+    private static final Log logger = LogFactory.getLog(ApplicationController.class);
 
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.info("Returning start view");
