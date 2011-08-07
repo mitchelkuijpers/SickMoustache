@@ -14,10 +14,10 @@ import java.io.IOException;
  */
 public class ApplicationController {
 
-    private static final Log Logger = LogFactory.getLog(ApplicationController.class);
+    private static final Log LOGGER = LogFactory.getLog(ApplicationController.class);
 
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Logger.info("Returning start view");
+		LOGGER.info("Returning start view");
 		return new ModelAndView("start.jsp");
 	}
 }
